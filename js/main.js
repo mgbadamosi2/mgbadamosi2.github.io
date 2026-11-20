@@ -258,20 +258,28 @@
   if (reflContainer && Array.isArray(window.LAB_REFLECTIONS)) {
     let activeCat = "All";
     let reflQuery = "";
-    const cats = ["All"].concat(
-      Array.from(new Set(window.LAB_REFLECTIONS.map(function (r) { return r.category; })))
-    );
+    function getCats(r) {
+      if (Array.isArray(r.categories)) return r.categories;
+      return r.category ? [r.category] : [];
+    }
+    const allCats = [];
+    window.LAB_REFLECTIONS.forEach(function (r) {
+      getCats(r).forEach(function (c) {
+        if (allCats.indexOf(c) === -1) allCats.push(c);
+      });
+    });
+    const cats = ["All"].concat(allCats);
 
     function renderReflections() {
       reflContainer.innerHTML = "";
       const q = reflQuery.trim().toLowerCase();
       const items = window.LAB_REFLECTIONS.filter(function (r) {
-        const matchCat = activeCat === "All" || r.category === activeCat;
+        const itemCats = getCats(r);
+        const matchCat = activeCat === "All" || itemCats.indexOf(activeCat) !== -1;
         const matchQuery =
           !q ||
           r.quote.toLowerCase().includes(q) ||
-          r.source.toLowerCase().includes(q) ||
-          (r.note && r.note.toLowerCase().includes(q));
+          r.source.toLowerCase().includes(q);
         return matchCat && matchQuery;
       });
       if (items.length === 0) {
@@ -280,7 +288,17 @@
       }
       items.forEach(function (r) {
         const card = el("article", "reflection-card");
-        card.appendChild(el("span", "card-tag", r.category + (r.date ? " · " + r.date : "")));
+        const tagsRow = el("div");
+        tagsRow.style.display = "flex";
+        tagsRow.style.flexWrap = "wrap";
+        tagsRow.style.gap = "0.45rem";
+        tagsRow.style.marginBottom = "0.35rem";
+        getCats(r).forEach(function (c, idx) {
+          const tag = el("span", "card-tag", idx === 0 && r.date ? c + " · " + r.date : c);
+          tag.style.marginBottom = "0";
+          tagsRow.appendChild(tag);
+        });
+        card.appendChild(tagsRow);
         card.appendChild(el("blockquote", "reflection-quote", "\u201C" + r.quote + "\u201D"));
         card.appendChild(el("div", "reflection-source", "- " + r.source));
         reflContainer.appendChild(card);

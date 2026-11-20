@@ -1,13 +1,20 @@
 window.LAB_NEWS = [
   {
     date: "2026-09",
-    tag: "Preprint & Talk",
-    text: "Our bioRxiv preprint identifying chemoimmunomodulatory induction trajectories in breast cancer (de Lima IL et al.) has been accepted, and Dr. Gbadamosi gave a GradCru talk on How to Succeed in Your PhD."
+    tag: "Preprint",
+    text: "Our bioRxiv preprint identifying chemoimmunomodulatory induction trajectories in breast cancer (de Lima IL et al.) has been accepted."
   },
   {
     date: "2026-04",
     tag: "AACR 2026",
-    text: "The Gbadamosi Lab attended AACR 2026 in San Diego with multiple poster and abstract presentations, and Malcolm Owusu presented at the UF Spring Undergraduate Symposium."
+    text: "The Gbadamosi Lab attended AACR 2026 in San Diego with multiple poster and abstract presentations."
+  },
+  {
+    date: "2026-04",
+    tag: "Undergrad Research",
+    text: "Malcolm Owusu presented his CRISPRi triple-negative breast cancer poster at the 2026 UF Spring Undergraduate Research Symposium.",
+    image: "assets/images/malcolm_symposium_2026.jpg",
+    imageAlt: "Malcolm Owusu presenting his poster at the 2026 UF Spring Undergraduate Research Symposium"
   },
   {
     date: "2026-03",
@@ -18,18 +25,64 @@ window.LAB_NEWS = [
   },
   {
     date: "2026-02",
-    tag: "Awards",
-    text: "Congratulations to Kennedy Coleman on winning the Basic Science Poster Award and Dr. Iasmim Lopes de Lima on being named an Oral Competition Finalist at the 2026 UF College of Pharmacy Research Showcase."
+    tag: "Award",
+    text: "Congratulations to Kennedy Coleman on winning the Basic Science Poster Award at the 2026 UF College of Pharmacy Research Showcase."
+  },
+  {
+    date: "2026-02",
+    tag: "Recognition",
+    text: "Congratulations to Dr. Iasmim Lopes de Lima on being named a Postdoctoral Scholar Oral Competition Finalist at the 2026 UF College of Pharmacy Research Showcase."
+  },
+  {
+    date: "2025-10",
+    tag: "Undergrad Research",
+    text: "Alyssa Ohaegbulam presented her cancer variant classification poster at the Fall 2025 Undergraduate Research Showcase.",
+    image: "assets/images/alyssa_showcase_2025.jpg",
+    imageAlt: "Alyssa Ohaegbulam presenting her poster at the Fall 2025 Undergraduate Research Showcase"
   },
   {
     date: "2025-07",
-    tag: "Publications",
-    text: "Celebrated the lab's first Oncoimmunology paper on TNBC chemoimmunomodulation, alongside collaborative publications in J Clin Invest and Future Oncology."
+    tag: "Publication",
+    text: "Published our lab's first Oncoimmunology paper on chemoimmunomodulation in triple-negative breast cancer."
+  },
+  {
+    date: "2025-07",
+    tag: "Collaboration",
+    text: "Co-authored study on blocking immune checkpoint LAIR1 published in the Journal of Clinical Investigation (J Clin Invest)."
+  },
+  {
+    date: "2025-07",
+    tag: "Publication",
+    text: "Published our genome-wide association study revealing modulators of cellular response to cyclophosphamide in Future Oncology."
+  },
+  {
+    date: "2025-04",
+    tag: "AACR 2025",
+    text: "Elizabeth Molchan presented our lab's research on restoring cellular cyclophosphamide sensitivity in TNBC at AACR 2025.",
+    image: "assets/images/elizabeth_aacr_2025.jpg",
+    imageAlt: "Elizabeth Molchan beside her poster at AACR 2025"
   },
   {
     date: "2025-02",
-    tag: "Trainees",
-    text: "Arlen Gyden won a poster award at the 2025 UF College of Pharmacy Research Showcase, Claudia Perez Perez published a PharmD Students article, and Malcolm Owusu was selected for the UF University Scholars Program."
+    tag: "Fellowship",
+    text: "Malcolm Owusu was selected for the University of Florida University Scholars Program."
+  },
+  {
+    date: "2025-02",
+    tag: "Publication",
+    text: "Claudia E. Perez Perez had a PharmD Students research article published."
+  },
+  {
+    date: "2025-02",
+    tag: "Award",
+    text: "Arlen Gyden won a poster award at the 2025 UF College of Pharmacy Research Showcase."
+  },
+  {
+    date: "2025-02",
+    tag: "Poster Presentation",
+    text: "Arlen Gyden presented our machine-learning-informed somatic variant classification platform (ArlVPI) at the 2025 UF Health Cancer Center Research Showcase.",
+    image: "assets/images/arlen_ufhcc_2025.jpg",
+    imageAlt: "Arlen Gyden presenting his ArlVPI poster at the 2025 UF Health Cancer Center Research Showcase"
   },
   {
     date: "2023-11",

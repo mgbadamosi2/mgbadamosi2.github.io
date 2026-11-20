@@ -14,21 +14,21 @@ window.LAB_REFLECTIONS = [
     note: ""
   },
   {
-    category: "Faith & Gospel",
+    categories: ["Faith & Gospel", "Quotes of the Week"],
     date: "2026-09-07",
     quote: "But, my child, let me give you some further advice: Be careful, for writing books is endless, and much study wears you out.",
     source: "Book of Ecclesiastes (NLT)",
     note: ""
   },
   {
-    category: "Faith & Gospel",
+    categories: ["Faith & Gospel", "Quotes of the Week"],
     date: "2026-03-30",
     quote: "There is profit in hard work, but mere talk leads to poverty.",
     source: "Book of Proverbs",
     note: ""
   },
   {
-    category: "Faith & Gospel",
+    categories: ["Faith & Gospel", "Quotes of the Week"],
     date: "2025-10-13",
     quote: "He who watches the wind waiting for all conditions to be perfect will not sow seed, and he who looks at the clouds will not reap a harvest.",
     source: "Book of Ecclesiastes (Amplified Version)",
@@ -70,7 +70,7 @@ window.LAB_REFLECTIONS = [
     note: "Looking forward to a GREAT week full of GREAT science ahead."
   },
   {
-    category: "Quotes of the Week",
+    categories: ["Faith & Gospel", "Quotes of the Week"],
     date: "2026-10-19",
     quote: "And as for those who are skilled in their work, they will be recognized and invited to serve kings rather than regular folk.",
     source: "Book of Proverbs (VOICE Version)",

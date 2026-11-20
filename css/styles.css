@@ -365,6 +365,12 @@ h1, h2, h3, h4 {
   box-shadow: var(--shadow-md);
 }
 
+.hero-visual--wide {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
 .hero-visual svg {
   width: 100%;
   height: auto;

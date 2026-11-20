@@ -7,7 +7,9 @@ window.LAB_NEWS = [
   {
     date: "2026-04",
     tag: "AACR 2026",
-    text: "The Gbadamosi Lab attended AACR 2026 in San Diego with multiple poster and abstract presentations."
+    text: "The Gbadamosi Lab attended AACR 2026 in San Diego with multiple poster and abstract presentations.",
+    linkText: "Gbadamosi Lab",
+    linkUrl: "https://aacrjournals.org/search-results?page=1&q=Gbadamosi&fl_IssueNo=7_Supplement&fl_Volume=86"
   },
   {
     date: "2026-04",

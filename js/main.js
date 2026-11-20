@@ -55,7 +55,20 @@
       tag.style.marginRight = "0.55rem";
       tag.style.marginBottom = "0";
       body.appendChild(tag);
-      body.appendChild(document.createTextNode(item.text));
+      if (item.linkText && item.linkUrl && item.text.indexOf(item.linkText) !== -1) {
+        const idx = item.text.indexOf(item.linkText);
+        const before = item.text.slice(0, idx);
+        const after = item.text.slice(idx + item.linkText.length);
+        if (before) body.appendChild(document.createTextNode(before));
+        const a = el("a", "", item.linkText);
+        a.href = item.linkUrl;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+        body.appendChild(a);
+        if (after) body.appendChild(document.createTextNode(after));
+      } else {
+        body.appendChild(document.createTextNode(item.text));
+      }
       if (item.image) {
         const img = el("img", "news-photo");
         img.src = item.image;

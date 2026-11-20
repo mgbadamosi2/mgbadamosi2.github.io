@@ -7,7 +7,7 @@ window.LAB_PEOPLE = {
     affiliation: "Department of Pharmacotherapy and Translational Research, University of Florida College of Pharmacy",
     bio: "Dr. Gbadamosi is an Assistant Professor in the Department of Pharmacotherapy and Translational Research at the University of Florida College of Pharmacy and a recipient of the NIH Director's Early Independence Award (DP5). He earned his Ph.D. in Pharmaceutical Sciences at UF (2021) and completed an NIH T32 PARADIGM Postdoctoral Fellowship before launching his independent lab in 2023. His group integrates computational, molecular, and cellular biology to characterize and optimize the immunomodulatory potential of first-line chemotherapeutics in aggressive cancers.",
     email: "mgbadamosi@ufl.edu",
-    office: "Medical Sciences Building, 1345 Center Drive, Room PG-05B, Gainesville, FL 32610",
+    office: "Medical Sciences Building, 1345 Center Drive, Room PG-21, Gainesville, FL 32610",
     cv: "assets/docs/Mohammed_Gbadamosi_CV.pdf",
     links: [
       { label: "Google Scholar", url: "https://scholar.google.com/scholar?q=Mohammed+Gbadamosi" },
@@ -16,46 +16,46 @@ window.LAB_PEOPLE = {
   },
   members: [
     {
-      name: "Iasmim Lopes de Lima, PhD",
+      name: "Iasmim Lopes de Lima, PhD, MS",
       initials: "IL",
       photo: "assets/images/isamim_lopes_de_lima.jpg",
       role: "Postdoctoral Fellow (2025-Present)",
-      focus: "Computational and transcriptomic characterization of chemoimmunomodulatory induction trajectories in breast cancer. 2026 UF College of Pharmacy Postdoctoral Scholar Research Oral Competition Finalist."
+      focus: "Engineering 3D tumor-immune coculture models to dissect chemoimmunomodulation and identify pharmacologic strategies to amplify its therapeutic potential. 2026 UF College of Pharmacy Postdoctoral Scholar Research Oral Competition Finalist."
     },
     {
       name: "Kennedy L. Coleman",
       initials: "KC",
       photo: "assets/images/kennedy_coleman.jpg",
       role: "PhD Student (2024-Present)",
-      focus: "Dissertation: The Chemoimmunomodulatory Effects of Anthracyclines and Taxanes in Triple-Negative Breast Cancer. 2026 UF College of Pharmacy Graduate Student Research Basic Science Poster Award."
+      focus: "Dissertation: The Chemoimmunomodulatory Effects of Anthracyclines in Triple-Negative Breast Cancer. 2026 UF College of Pharmacy Graduate Student Research Basic Science Poster Award."
     },
     {
-      name: "Kathleen H. Streeks",
+      name: "Kathleen H. Streeks, MS",
       initials: "KS",
       photo: "assets/images/kathleen_streeks.jpg",
-      role: "Research Staff",
-      focus: "Molecular and cellular characterization of chemotherapeutic immunomodulation and cyclophosphamide response in triple-negative breast cancer."
+      role: "Lab Manager & Molecular Biology Lead",
+      focus: "Leads laboratory operations and molecular biology workflows, developing and optimizing assays to detect and quantify chemoimmunomodulation across experimental models."
     },
     {
       name: "Claudia E. Perez Perez",
       initials: "CP",
       photo: "assets/images/claudia_perez_perez.png",
       role: "UF PharmD Student (2024-Present)",
-      focus: "Identification and characterization of platinum agent-induced chemoimmunomodulation in triple-negative breast cancer."
+      focus: "Developing and validating breast-to-brain metastasis models to investigate chemoimmunomodulation and therapeutic vulnerabilities."
     },
     {
       name: "Malcolm Owusu",
       initials: "MO",
       photo: "assets/images/malcolm_owusu.jpg",
       role: "UF Undergraduate Student (2024-Present)",
-      focus: "2025 UF University Scholar Program Awardee. Investigating chemoimmunomodulation in triple-negative breast cancer."
+      focus: "Developing tractable CRISPRi triple-negative breast cancer cell line models to investigate genes and non-coding regions associated with chemoimmunomodulation and chemotherapy efficacy. 2025 UF University Scholar Program Awardee."
     },
     {
       name: "Alyssa Ohaegbulam",
       initials: "AO",
       photo: "assets/images/alyssa_ohaegbulam.png",
-      role: "Undergraduate Student, Santa Fe College (2024-Present)",
-      focus: "SF2UF NIH/NIGMS T34 Bridge to Baccalaureate Fellow. Studying cellular modulators of chemotherapy response in TNBC."
+      role: "UF Undergraduate Student (2024-Present)",
+      focus: "SF2UF NIH/NIGMS T34 Bridge to Baccalaureate Fellow. Investigating cellular modulators of chemotherapy response in triple-negative breast cancer."
     }
   ],
   alumni: [

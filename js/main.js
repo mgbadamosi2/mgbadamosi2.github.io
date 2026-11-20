@@ -283,9 +283,6 @@
         card.appendChild(el("span", "card-tag", r.category + (r.date ? " · " + r.date : "")));
         card.appendChild(el("blockquote", "reflection-quote", "\u201C" + r.quote + "\u201D"));
         card.appendChild(el("div", "reflection-source", "- " + r.source));
-        if (r.note) {
-          card.appendChild(el("p", "reflection-note", r.note));
-        }
         reflContainer.appendChild(card);
       });
     }

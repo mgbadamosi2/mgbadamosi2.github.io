@@ -1,31 +1,24 @@
 window.LAB_REFLECTIONS = [
   {
-    category: "Lab Culture",
-    date: "2026-09-14",
-    quote: "It is a GREAT week for some GREAT science, and I am glad I get to work alongside brilliant scientists such as yourselves.",
-    source: "Dr. Mohammed O. Gbadamosi",
-    note: "A weekly reminder to our team that great science is a privilege we get to pursue together."
-  },
-  {
     category: "Faith & Gospel",
     date: "2026-01",
     quote: "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.",
     source: "John 3:16 (ESV)",
-    note: "Everything I do in science and mentorship is rooted in grace, purpose, and service to others."
+    note: ""
   },
   {
     category: "Faith & Gospel",
     date: "2026-01",
     quote: "Whatever you do, work heartily, as for the Lord and not for men.",
     source: "Colossians 3:23 (ESV)",
-    note: "A daily anchor for rigorous, honest science, reminding us that diligence, integrity, and care in the lab are acts of worship."
+    note: ""
   },
   {
     category: "Faith & Gospel",
     date: "2026-09-07",
     quote: "But, my child, let me give you some further advice: Be careful, for writing books is endless, and much study wears you out.",
     source: "Book of Ecclesiastes (NLT)",
-    note: "Rest is critical to our health and for us to do GREAT science."
+    note: ""
   },
   {
     category: "Faith & Gospel",
@@ -39,6 +32,13 @@ window.LAB_REFLECTIONS = [
     date: "2025-10-13",
     quote: "He who watches the wind waiting for all conditions to be perfect will not sow seed, and he who looks at the clouds will not reap a harvest.",
     source: "Book of Ecclesiastes (Amplified Version)",
+    note: ""
+  },
+  {
+    category: "Lab Culture",
+    date: "2026-09-14",
+    quote: "It is a GREAT week for some GREAT science, and I am glad I get to work alongside brilliant scientists such as yourselves.",
+    source: "Dr. Mohammed O. Gbadamosi",
     note: ""
   },
   {

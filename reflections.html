@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflections — Faith, Quotes &amp; Notes | Gbadamosi Lab</title>
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("gbadamosi-lab-theme");
+        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+      } catch (_) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">GL</span>
+        <span>Gbadamosi Lab</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul id="primary-nav" class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="join.html">Join Us</a></li>
+          <li><a href="reflections.html" aria-current="page">Reflections</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-pressed="false">Dark Mode</button>
+        <button id="menu-toggle" class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-header">
+      <div class="container">
+        <h1>Reflections</h1>
+        <p>Faith &amp; the Gospel, favorite quotes, and personal notes on science, mentorship, and life.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="toolbar">
+          <div id="reflections-filters" class="filter-pills" role="group" aria-label="Filter reflections by category"></div>
+        </div>
+        <div id="reflections-list" class="pub-list" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Gbadamosi Lab</strong> · University of Florida College of Pharmacy</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="join.html">Join Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="data/reflections.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>

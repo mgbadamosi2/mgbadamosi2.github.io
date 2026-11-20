@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Us | Gbadamosi Lab</title>
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("gbadamosi-lab-theme");
+        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+      } catch (_) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">GL</span>
+        <span>Gbadamosi Lab</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul id="primary-nav" class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="join.html" aria-current="page">Join Us</a></li>
+          <li><a href="reflections.html">Reflections</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-pressed="false">Dark Mode</button>
+        <button id="menu-toggle" class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-header">
+      <div class="container">
+        <h1>Join the Lab</h1>
+        <p>We welcome curious, collaborative scientists across pharmacology, immunology, cancer biology, and computational/data sciences.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-3">
+        <article class="card">
+          <span class="card-tag">Postdoctoral Fellows</span>
+          <h3>Postdocs</h3>
+          <p>Ideal for PhD or PharmD/PhD graduates interested in tumor immunology, chemoimmunomodulation, or computational oncology. Please email your CV, a brief research statement, and 2–3 references.</p>
+        </article>
+        <article class="card">
+          <span class="card-tag">Graduate Students</span>
+          <h3>PhD &amp; MS Trainees</h3>
+          <p>Prospective students can apply through the UF College of Pharmacy / Biomedical Sciences graduate programs. Current UF students interested in rotations are encouraged to reach out.</p>
+        </article>
+        <article class="card">
+          <span class="card-tag">Undergrads &amp; PharmD</span>
+          <h3>Undergraduate &amp; PharmD</h3>
+          <p>We offer hands-on mentorship in wet-lab assays and bioinformatics for motivated UF undergraduate and PharmD students. Send a short note on your interests and availability.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="card">
+          <h2>Contact &amp; Location</h2>
+          <p style="margin-bottom: 0.75rem;">
+            <strong>Dr. Mohammed O. Gbadamosi</strong><br>
+            Department of Pharmacotherapy and Translational Research<br>
+            University of Florida College of Pharmacy · Gainesville, FL
+          </p>
+          <a class="btn btn-primary" href="mailto:mgbadamosi@cop.ufl.edu">Email Dr. Gbadamosi</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Gbadamosi Lab</strong> · University of Florida College of Pharmacy</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="reflections.html">Reflections</a>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="js/main.js"></script>
+</body>
+</html>

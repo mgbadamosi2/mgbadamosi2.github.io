@@ -1,2 +1,165 @@
-<h1>Welcome to the Gbadamosi Lab Website</h1>
-<p>This is our temporary test page.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gbadamosi Lab | Chemoimmunomodulation &amp; Translational Oncology</title>
+  <meta name="description" content="The Gbadamosi Lab at the University of Florida College of Pharmacy studies chemoimmunomodulation, triple-negative breast cancer, and translational immuno-oncology.">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("gbadamosi-lab-theme");
+        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+      } catch (_) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">GL</span>
+        <span>Gbadamosi Lab</span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul id="primary-nav" class="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="join.html">Join Us</a></li>
+          <li><a href="reflections.html">Reflections</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-pressed="false">Dark Mode</button>
+        <button id="menu-toggle" class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">UF College of Pharmacy · PTR</span>
+          <h1>Decoding Chemoimmunomodulation to Maximize Cancer Immunotherapy</h1>
+          <p class="hero-lead">
+            The Gbadamosi Lab integrates molecular pharmacology, immunology, and computational modeling to understand how chemotherapies remodel the tumor immune microenvironment—especially in triple-negative breast cancer and brain metastases.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="research.html">Explore Research</a>
+            <a class="btn btn-secondary" href="join.html">Join the Lab</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Schematic of chemoimmunomodulation">
+          <svg viewBox="0 0 360 250" role="img" aria-labelledby="hero-svg-title">
+            <title id="hero-svg-title">Chemoimmunomodulation Synergy Schematic</title>
+            <defs>
+              <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="var(--accent-2)" stop-opacity="0.9"/>
+              </linearGradient>
+            </defs>
+            <circle cx="95" cy="125" r="56" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-dasharray="6 4"/>
+            <circle cx="95" cy="125" r="34" fill="var(--accent-soft)"/>
+            <text x="95" y="121" text-anchor="middle" fill="var(--text)" font-size="12" font-weight="700">Chemo</text>
+            <text x="95" y="137" text-anchor="middle" fill="var(--text-muted)" font-size="10">Induction</text>
+
+            <path d="M 155 125 L 200 125" stroke="url(#g1)" stroke-width="3" stroke-linecap="round"/>
+            <polygon points="200,119 212,125 200,131" fill="var(--accent-2)"/>
+
+            <circle cx="268" cy="125" r="56" fill="none" stroke="var(--accent-2)" stroke-width="2.5"/>
+            <circle cx="268" cy="125" r="34" fill="var(--accent-soft)"/>
+            <text x="268" y="121" text-anchor="middle" fill="var(--text)" font-size="12" font-weight="700">Immune</text>
+            <text x="268" y="137" text-anchor="middle" fill="var(--text-muted)" font-size="10">Synergy</text>
+
+            <circle cx="182" cy="52" r="22" fill="var(--bg-subtle)" stroke="var(--accent-3)" stroke-width="2"/>
+            <text x="182" y="56" text-anchor="middle" fill="var(--text)" font-size="10" font-weight="700">AI / Omics</text>
+            <path d="M 164 70 L 125 95" stroke="var(--accent-3)" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <path d="M 200 70 L 238 95" stroke="var(--accent-3)" stroke-width="1.5" stroke-dasharray="4 3"/>
+          </svg>
+          <p class="hero-visual-caption">
+            Translational bridge: pairing chemotherapy-driven immune remodeling with checkpoint blockade &amp; predictive models.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <article class="reflection-card" style="margin-bottom: 2.5rem;">
+          <span class="card-tag">Our Mission</span>
+          <p class="reflection-quote" style="margin-bottom: 0;">
+            &ldquo;Replace this with your lab&rsquo;s mission statement&mdash;why your group exists, who you serve, and the scientific and mentorship culture you are building at UF.&rdquo;
+          </p>
+        </article>
+
+        <div class="section-header">
+          <div>
+            <h2>Research Pillars</h2>
+            <p class="section-subtitle">From mechanistic tumor immunology to AI-guided precision combination therapy.</p>
+          </div>
+          <a href="research.html">View all research -></a>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <span class="card-tag">01 · Immuno-Oncology</span>
+            <h3>Chemoimmunomodulation in TNBC</h3>
+            <p>Dissecting how conventional and targeted chemotherapies reshape anti-tumor immunity and sensitize triple-negative breast cancer to anti-PD-1 therapy.</p>
+          </article>
+          <article class="card">
+            <span class="card-tag">02 · Computational &amp; AI</span>
+            <h3>Predictive Modeling &amp; Classifiers</h3>
+            <p>Building transcriptomic and multi-omic frameworks to stratify patient-specific chemoimmunomodulatory trajectories and guide rational regimen selection.</p>
+          </article>
+          <article class="card">
+            <span class="card-tag">03 · Translational</span>
+            <h3>Pharmacogenomics &amp; Metastasis</h3>
+            <p>Investigating therapeutic resistance, brain metastases, and precision medicine strategies across aggressive solid and hematologic malignancies.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>New &amp; Notable</h2>
+            <p class="section-subtitle">Recent milestones, publications, and lab updates.</p>
+          </div>
+        </div>
+        <div id="news-list" class="news-list" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Gbadamosi Lab</strong> · University of Florida College of Pharmacy<br>
+        <span>Department of Pharmacotherapy and Translational Research</span>
+      </div>
+      <div class="footer-links">
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="join.html">Join Us</a>
+        <a href="reflections.html">Reflections</a>
+        <a href="mailto:mgbadamosi@cop.ufl.edu">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="data/news.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>

@@ -5,7 +5,7 @@ window.LAB_PEOPLE = {
     photo: "", // e.g. "assets/images/gbadamosi.jpg"
     role: "Principal Investigator · Assistant Professor",
     affiliation: "Department of Pharmacotherapy and Translational Research, University of Florida College of Pharmacy",
-    bio: "Dr. Gbadamosi leads the Gbadamosi Lab at the University of Florida, where his group integrates molecular pharmacology, immunology, and computational modeling to decode chemoimmunomodulation in aggressive cancers such as triple-negative breast cancer. He is a recipient of the NIH Director's Early Independence Award.",
+    bio: "Dr. Gbadamosi leads the Gbadamosi Lab at the University of Florida, where his group integrates computational, molecular, and cellular biology to characterize and optimize the immunomodulatory potential of first-line chemotherapeutics—enhancing chemotherapy efficacy, response durability, and downstream chemoimmunotherapy synergy in aggressive cancers. He is a recipient of the NIH Director's Early Independence Award.",
     email: "mgbadamosi@cop.ufl.edu",
     cv: "assets/docs/Mohammed_Gbadamosi_CV.pdf",
     links: [

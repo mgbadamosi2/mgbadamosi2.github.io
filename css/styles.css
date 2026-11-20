@@ -427,11 +427,13 @@ h1, h2, h3, h4 {
   border-radius: var(--radius);
   padding: 1.4rem;
   box-shadow: var(--shadow-sm);
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  transition: border-color 0.22s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .card:hover {
-  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+  border-color: color-mix(in srgb, var(--accent) 50%, var(--border));
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md), 0 0 0 1px color-mix(in srgb, var(--accent) 25%, transparent);
 }
 
 .card-tag {
@@ -492,6 +494,13 @@ h1, h2, h3, h4 {
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   padding: 1rem 1.25rem;
+  transition: border-color 0.22s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.news-item:hover {
+  border-color: color-mix(in srgb, var(--accent-2) 50%, var(--border));
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
 }
 
 .news-date {
@@ -571,6 +580,13 @@ h1, h2, h3, h4 {
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   padding: 1.25rem 1.4rem;
+  transition: border-color 0.22s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.pub-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 50%, var(--border));
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
 }
 
 .pub-meta {
@@ -656,6 +672,14 @@ h1, h2, h3, h4 {
   border-radius: var(--radius);
   padding: 1.6rem;
   box-shadow: var(--shadow-sm);
+  transition: border-color 0.22s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reflection-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 50%, var(--border));
+  border-left-color: var(--accent-2);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
 }
 
 .reflection-quote {

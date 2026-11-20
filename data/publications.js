@@ -61,5 +61,14 @@ window.LAB_PUBLICATIONS = [
     journal: "Futur Oncol (IF: 3.7)",
     doi: "https://doi.org/10.2217/fon-2020-0746",
     summary: "Characterizes novel CD33 isoform-specific antibodies and their implications for CD33-directed immunotherapy in AML."
+  },
+  {
+    year: 2018,
+    topic: "AML Research",
+    title: "Gemtuzumab ozogamicin for treatment of newly diagnosed CD33-positive acute myeloid leukemia",
+    authors: "Gbadamosi M, Meshinchi S, Lamba JK*",
+    journal: "Futur Oncol. 2018;14(30) (IF: 2.3)",
+    doi: "https://doi.org/10.2217/fon-2018-0325",
+    summary: "Reviews the clinical pharmacology, efficacy, and pharmacogenomic considerations of gemtuzumab ozogamicin in newly diagnosed CD33-positive AML."
   }
 ];

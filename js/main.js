@@ -44,7 +44,55 @@
     return node;
   }
 
-  // Render News (Home)
+  // Render Lab Photos Dynamic Collage (Home)
+  const collageContainer = document.getElementById("lab-collage");
+  if (collageContainer && Array.isArray(window.LAB_GALLERY) && window.LAB_GALLERY.length > 0) {
+    const photos = window.LAB_GALLERY;
+    const reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    // 4 tiles, each cycling through a distinct staggered sequence of the 8 photos
+    const tileConfigs = [
+      { indices: [0, 4, 2, 6], interval: 3800 },
+      { indices: [1, 5, 3, 7], interval: 4600 },
+      { indices: [4, 7, 0, 3], interval: 5300 },
+      { indices: [7, 2, 5, 1], interval: 6100 }
+    ];
+
+    tileConfigs.forEach(function (cfg) {
+      const tile = el("div", "collage-tile");
+      tile.title = "Click to view next photo";
+      const validIndices = cfg.indices.filter(function (i) { return i < photos.length; });
+      if (validIndices.length === 0) return;
+
+      const imgs = validIndices.map(function (photoIdx, pos) {
+        const img = el("img", pos === 0 ? "is-active" : "");
+        img.src = photos[photoIdx].src;
+        img.alt = photos[photoIdx].caption;
+        img.loading = "lazy";
+        tile.appendChild(img);
+        return { img: img, caption: photos[photoIdx].caption };
+      });
+
+      const captionEl = el("div", "collage-caption", imgs[0].caption);
+      tile.appendChild(captionEl);
+
+      let current = 0;
+      function advance() {
+        imgs[current].img.classList.remove("is-active");
+        current = (current + 1) % imgs.length;
+        imgs[current].img.classList.add("is-active");
+        captionEl.textContent = imgs[current].caption;
+      }
+
+      tile.addEventListener("click", advance);
+      if (!reducedMotion && imgs.length > 1) {
+        setInterval(advance, cfg.interval);
+      }
+
+      collageContainer.appendChild(tile);
+    });
+  }
+
+  // Render News (Home & News page)
   const newsContainer = document.getElementById("news-list");
   if (newsContainer && Array.isArray(window.LAB_NEWS)) {
     window.LAB_NEWS.forEach(function (item) {

@@ -92,10 +92,10 @@ window.LAB_PEOPLE = {
       nextPosition: "Student Researcher, Clinical Psychology Research Group"
     },
     {
-      name: "Oluwaseyi Olabige",
+      name: "Oluwaseyi (Seyi) Olabige",
       initials: "OO",
-      photo: "",
-      role: "UF Undergraduate Alumnus (2020-2023)",
+      photo: "assets/images/seyi_olabige.jpg",
+      role: "UF Undergraduate Alumna (2020-2023)",
       focus: "",
       nextPosition: "Psychiatry Medical Scribe at ScribeAmerica"
     }

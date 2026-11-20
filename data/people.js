@@ -65,7 +65,7 @@ window.LAB_PEOPLE = {
       photo: "assets/images/mariana_makarem.jpg",
       role: "Master's Graduate (2024-2026)",
       focus: "McKnight Doctoral Fellowship recipient; platinum-induced chemoimmunomodulation in TNBC.",
-      nextPosition: "PhD Program (McKnight Doctoral Fellow)"
+      nextPosition: ""
     },
     {
       name: "Elizabeth K. Molchan, BS",

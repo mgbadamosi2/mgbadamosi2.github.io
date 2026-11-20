@@ -224,11 +224,14 @@
 
     if (alumniContainer && Array.isArray(window.LAB_PEOPLE.alumni)) {
       window.LAB_PEOPLE.alumni.forEach(function (al) {
-        const card = el("article", "card");
+        const card = el("article", "card person-card");
+        if (al.photo || al.initials) {
+          card.appendChild(renderAvatar(al));
+        }
         card.appendChild(el("h3", "", al.name));
         card.appendChild(el("div", "person-role", al.role));
         const p = el("p", "", al.destination);
-        p.style.marginTop = "0.4rem";
+        p.style.marginTop = "0.2rem";
         card.appendChild(p);
         alumniContainer.appendChild(card);
       });
@@ -253,7 +256,7 @@
         const card = el("article", "reflection-card");
         card.appendChild(el("span", "card-tag", r.category));
         card.appendChild(el("blockquote", "reflection-quote", "\u201C" + r.quote + "\u201D"));
-        card.appendChild(el("div", "reflection-source", "— " + r.source));
+        card.appendChild(el("div", "reflection-source", "- " + r.source));
         if (r.note) {
           card.appendChild(el("p", "reflection-note", r.note));
         }

@@ -1,17 +1,22 @@
 window.LAB_NEWS = [
   {
-    date: "2026-01",
-    tag: "Research",
-    text: "New work on chemoimmunomodulation and anti-PD-1 synergy in triple-negative breast cancer published in Oncoimmunology."
+    date: "2026-09",
+    tag: "Preprint",
+    text: "Our bioRxiv preprint identifying chemoimmunomodulatory induction trajectories in breast cancer (de Lima IL et al.) has been accepted."
   },
   {
-    date: "2025-09",
-    tag: "Recruiting",
-    text: "The Gbadamosi Lab is actively recruiting motivated PhD students, postdoctoral fellows, and undergraduate researchers."
+    date: "2026-04",
+    tag: "AACR",
+    text: "Three lab abstracts presented at AACR 2026 (Cancer Research) by Iasmim Lopes de Lima, Kennedy Coleman, and Mariana Makarem."
   },
   {
-    date: "2023-10",
-    tag: "Award",
-    text: "Dr. Mohammed Gbadamosi receives the NIH Director's Early Independence Award (DP5) to launch the Gbadamosi Lab at the University of Florida."
+    date: "2025-07",
+    tag: "Publication",
+    text: "New papers published in Oncoimmunology (TNBC chemoimmunomodulation), J Clin Invest (LAIR1 blockade), and Future Oncology (cyclophosphamide GWAS)."
+  },
+  {
+    date: "2023-11",
+    tag: "Lab Launch",
+    text: "Dr. Mohammed Gbadamosi receives the NIH Director's Early Independence Award (1DP5OD036134) and launches the Gbadamosi Lab at UF College of Pharmacy."
   }
 ];

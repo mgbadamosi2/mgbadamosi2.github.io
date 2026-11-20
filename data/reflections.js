@@ -11,13 +11,13 @@ window.LAB_REFLECTIONS = [
     date: "2026-01",
     quote: "Whatever you do, work heartily, as for the Lord and not for men.",
     source: "Colossians 3:23 (ESV)",
-    note: "A daily anchor for rigorous, honest science—reminding us that diligence, integrity, and care in the lab are acts of worship."
+    note: "A daily anchor for rigorous, honest science, reminding us that diligence, integrity, and care in the lab are acts of worship."
   },
   {
     category: "Quotes",
     date: "2026-01",
     quote: "Science is not only a disciple of reason but also one of romance and passion.",
-    source: "Stephen Hawking (Placeholder — swap for your favorite quotes)",
+    source: "Stephen Hawking (Placeholder, swap for your favorite quotes)",
     note: "Add quotes from thinkers, pastors, mentors, or scientists you love, along with a few sentences on why they resonate with you."
   },
   {

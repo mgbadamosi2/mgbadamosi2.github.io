@@ -76,6 +76,15 @@
         img.loading = "lazy";
         body.appendChild(img);
       }
+      if (item.embedUrl) {
+        const iframe = el("iframe", "news-embed");
+        iframe.src = item.embedUrl;
+        iframe.title = item.embedTitle || item.tag;
+        iframe.loading = "lazy";
+        iframe.setAttribute("allowfullscreen", "");
+        iframe.setAttribute("frameborder", "0");
+        body.appendChild(iframe);
+      }
       row.appendChild(body);
       newsContainer.appendChild(row);
     });

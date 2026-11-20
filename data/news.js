@@ -9,7 +9,9 @@ window.LAB_NEWS = [
     tag: "AACR 2026",
     text: "The Gbadamosi Lab attended AACR 2026 in San Diego with multiple poster and abstract presentations.",
     linkText: "Gbadamosi Lab",
-    linkUrl: "https://aacrjournals.org/search-results?page=1&q=Gbadamosi&fl_IssueNo=7_Supplement&fl_Volume=86"
+    linkUrl: "https://aacrjournals.org/search-results?page=1&q=Gbadamosi&fl_IssueNo=7_Supplement&fl_Volume=86",
+    embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7452063616075194368?collapsed=1",
+    embedTitle: "Gbadamosi Lab at AACR 2026 LinkedIn Video"
   },
   {
     date: "2026-04",

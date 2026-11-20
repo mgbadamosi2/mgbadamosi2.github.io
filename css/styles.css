@@ -518,6 +518,17 @@ h1, h2, h3, h4 {
   object-fit: cover;
 }
 
+.news-embed {
+  margin-top: 0.9rem;
+  width: 100%;
+  max-width: 504px;
+  height: 720px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-subtle);
+  display: block;
+}
+
 .news-date {
   font-family: var(--font-mono);
   font-size: 0.84rem;
@@ -693,10 +704,10 @@ h1, h2, h3, h4 {
 }
 
 .avatar-img--pi {
-  width: 260px;
-  height: 215px;
+  width: 320px;
+  max-width: 100%;
+  height: auto;
   border-radius: var(--radius);
-  object-position: center 15%;
   border: 2px solid var(--accent-2);
 }
 

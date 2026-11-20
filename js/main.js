@@ -343,7 +343,7 @@
     function renderReflections() {
       reflContainer.innerHTML = "";
       const q = reflQuery.trim().toLowerCase();
-      const items = window.LAB_REFLECTIONS.filter(function (r) {
+      let items = window.LAB_REFLECTIONS.filter(function (r) {
         const itemCats = getCats(r);
         const matchCat = activeCat === "All" || itemCats.indexOf(activeCat) !== -1;
         const matchQuery =
@@ -352,6 +352,23 @@
           r.source.toLowerCase().includes(q);
         return matchCat && matchQuery;
       });
+      if (activeCat === "Quotes of the Week") {
+        items = items.slice().sort(function (a, b) {
+          return (b.date || "").localeCompare(a.date || "");
+        });
+      } else if (activeCat === "All") {
+        const faithAndCulture = items.filter(function (r) {
+          const c = getCats(r);
+          return c.indexOf("Faith & Gospel") !== -1 || c.indexOf("Lab Culture") !== -1;
+        });
+        const quotesOnly = items.filter(function (r) {
+          const c = getCats(r);
+          return c.indexOf("Faith & Gospel") === -1 && c.indexOf("Lab Culture") === -1;
+        }).sort(function (a, b) {
+          return (b.date || "").localeCompare(a.date || "");
+        });
+        items = faithAndCulture.concat(quotesOnly);
+      }
       if (items.length === 0) {
         reflContainer.appendChild(el("p", "section-subtitle", "No matching reflections found."));
         return;

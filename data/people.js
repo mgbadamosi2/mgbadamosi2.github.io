@@ -2,7 +2,7 @@ window.LAB_PEOPLE = {
   pi: {
     name: "Mohammed Olusoji Gbadamosi, PhD",
     initials: "MG",
-    photo: "", // Drop a PI headshot in assets/images/ and set the path here
+    photo: "assets/images/mohammed_gbadamosi.jpg",
     role: "Principal Investigator, Assistant Professor",
     affiliation: "Department of Pharmacotherapy and Translational Research, University of Florida College of Pharmacy",
     bio: "Dr. Gbadamosi is an Assistant Professor in the Department of Pharmacotherapy and Translational Research at the University of Florida College of Pharmacy and a recipient of the NIH Director's Early Independence Award (DP5). He earned his Ph.D. in Pharmaceutical Sciences at UF (2021) and completed an NIH T32 PARADIGM Postdoctoral Fellowship before launching his independent lab in 2023. His group integrates computational, molecular, and cellular biology to characterize and optimize the immunomodulatory potential of first-line chemotherapeutics in aggressive cancers.",
@@ -64,42 +64,40 @@ window.LAB_PEOPLE = {
       initials: "MM",
       photo: "assets/images/mariana_makarem.jpg",
       role: "Master's Graduate (2024-2026)",
-      destination: "McKnight Doctoral Fellowship recipient; platinum-induced chemoimmunomodulation in TNBC."
+      focus: "McKnight Doctoral Fellowship recipient; platinum-induced chemoimmunomodulation in TNBC.",
+      nextPosition: "PhD Program (McKnight Doctoral Fellow)"
     },
     {
       name: "Elizabeth K. Molchan, BS",
       initials: "EM",
       photo: "assets/images/elizabeth_molchan.png",
       role: "UF Undergraduate Alumna (2023-2025)",
-      destination: "NIH/NIGMS T34 MARC GatorSTAR Fellow & 2024 ABRCMS Poster Award. Next: PhD Program in Virology at Wake Forest University."
+      focus: "NIH/NIGMS T34 MARC GatorSTAR Fellow & 2024 ABRCMS Poster Award.",
+      nextPosition: "PhD Program in Virology at Wake Forest University"
     },
     {
       name: "Arlen L. Gyden",
       initials: "AG",
-      photo: "",
+      photo: "assets/images/arlen_gyden.jpg",
       role: "Undergraduate & Postbaccalaureate Fellow (2023-2025)",
-      destination: "2024 CaRE2 Postbaccalaureate Fellow & 2025 UF COP Poster Award. Next: Data Science Analyst, Susan G. Komen."
+      focus: "2024 CaRE2 Postbaccalaureate Fellow & 2025 UF COP Poster Award.",
+      nextPosition: "Data Science Analyst, Susan G. Komen"
     },
     {
       name: "Leena Alabbadane",
       initials: "LA",
-      photo: "",
+      photo: "assets/images/leena_alabbadane.png",
       role: "UF Undergraduate Alumna (2024-2025)",
-      destination: "Next: Student Researcher, Clinical Psychology Research Group."
-    },
-    {
-      name: "Darryl Owusu-Ansah, BSc",
-      initials: "DO",
-      photo: "",
-      role: "External Career Mentee (2021-2023)",
-      destination: "Next: Postbaccalaureate Intramural Research Trainee, NIH Department of Transfusion Medicine."
+      focus: "",
+      nextPosition: "Student Researcher, Clinical Psychology Research Group"
     },
     {
       name: "Oluwaseyi Olabige",
       initials: "OO",
       photo: "",
       role: "UF Undergraduate Alumnus (2020-2023)",
-      destination: "Next: Psychiatry Medical Scribe at ScribeAmerica."
+      focus: "",
+      nextPosition: "Psychiatry Medical Scribe at ScribeAmerica"
     }
   ]
 };

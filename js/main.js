@@ -56,6 +56,13 @@
       tag.style.marginBottom = "0";
       body.appendChild(tag);
       body.appendChild(document.createTextNode(item.text));
+      if (item.image) {
+        const img = el("img", "news-photo");
+        img.src = item.image;
+        img.alt = item.imageAlt || item.tag;
+        img.loading = "lazy";
+        body.appendChild(img);
+      }
       row.appendChild(body);
       newsContainer.appendChild(row);
     });
@@ -148,9 +155,9 @@
     renderPubs();
   }
 
-  function renderAvatar(person) {
+  function renderAvatar(person, isPi) {
     if (person.photo) {
-      const img = el("img", "avatar-img");
+      const img = el("img", isPi ? "avatar-img avatar-img--pi" : "avatar-img");
       img.src = person.photo;
       img.alt = person.name + " headshot";
       img.loading = "lazy";
@@ -174,7 +181,7 @@
       top.style.alignItems = "center";
       top.style.marginBottom = "1rem";
 
-      top.appendChild(renderAvatar(pi));
+      top.appendChild(renderAvatar(pi, true));
       const info = el("div");
       info.appendChild(el("h3", "", pi.name));
       info.appendChild(el("div", "person-role", pi.role));
@@ -230,9 +237,15 @@
         }
         card.appendChild(el("h3", "", al.name));
         card.appendChild(el("div", "person-role", al.role));
-        const p = el("p", "", al.destination);
-        p.style.marginTop = "0.2rem";
-        card.appendChild(p);
+        if (al.focus) {
+          card.appendChild(el("p", "", al.focus));
+        }
+        if (al.nextPosition) {
+          const np = el("p", "next-position");
+          np.appendChild(el("strong", "", "Next Position: "));
+          np.appendChild(document.createTextNode(al.nextPosition));
+          card.appendChild(np);
+        }
         alumniContainer.appendChild(card);
       });
     }
@@ -241,20 +254,33 @@
   // Render Reflections (Faith, Quotes & Personal Notes)
   const reflContainer = document.getElementById("reflections-list");
   const reflFilters = document.getElementById("reflections-filters");
+  const reflSearch = document.getElementById("reflections-search");
   if (reflContainer && Array.isArray(window.LAB_REFLECTIONS)) {
     let activeCat = "All";
+    let reflQuery = "";
     const cats = ["All"].concat(
       Array.from(new Set(window.LAB_REFLECTIONS.map(function (r) { return r.category; })))
     );
 
     function renderReflections() {
       reflContainer.innerHTML = "";
+      const q = reflQuery.trim().toLowerCase();
       const items = window.LAB_REFLECTIONS.filter(function (r) {
-        return activeCat === "All" || r.category === activeCat;
+        const matchCat = activeCat === "All" || r.category === activeCat;
+        const matchQuery =
+          !q ||
+          r.quote.toLowerCase().includes(q) ||
+          r.source.toLowerCase().includes(q) ||
+          (r.note && r.note.toLowerCase().includes(q));
+        return matchCat && matchQuery;
       });
+      if (items.length === 0) {
+        reflContainer.appendChild(el("p", "section-subtitle", "No matching reflections found."));
+        return;
+      }
       items.forEach(function (r) {
         const card = el("article", "reflection-card");
-        card.appendChild(el("span", "card-tag", r.category));
+        card.appendChild(el("span", "card-tag", r.category + (r.date ? " · " + r.date : "")));
         card.appendChild(el("blockquote", "reflection-quote", "\u201C" + r.quote + "\u201D"));
         card.appendChild(el("div", "reflection-source", "- " + r.source));
         if (r.note) {
@@ -277,6 +303,13 @@
           renderReflections();
         });
         reflFilters.appendChild(btn);
+      });
+    }
+
+    if (reflSearch) {
+      reflSearch.addEventListener("input", function (e) {
+        reflQuery = e.target.value;
+        renderReflections();
       });
     }
 

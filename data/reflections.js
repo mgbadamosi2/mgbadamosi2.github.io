@@ -42,6 +42,13 @@ window.LAB_REFLECTIONS = [
     note: ""
   },
   {
+    categories: ["Faith & Gospel", "Quotes of the Week"],
+    date: "2026-11-23",
+    quote: "The thankful heart will find, in every hour, some heavenly blessings.",
+    source: "Henry Ward Beecher (American Congregationalist Clergyman and Abolitionist)",
+    note: ""
+  },
+  {
     category: "Quotes of the Week",
     date: "2026-11-16",
     quote: "Your mind will follow whatever you feed it. Want better thoughts? Consume better things.",

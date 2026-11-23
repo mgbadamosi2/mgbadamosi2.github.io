@@ -73,15 +73,25 @@
 
     const bar = el("div", "gallery-bar");
     const captionEl = el("div", "gallery-caption", photos[0].caption);
+    const controls = el("div", "gallery-controls");
+    const pauseBtn = el("button", "icon-btn", reducedMotion ? "Play" : "Pause");
+    pauseBtn.type = "button";
+    pauseBtn.setAttribute("aria-pressed", String(reducedMotion));
+    pauseBtn.setAttribute("aria-label", reducedMotion ? "Play slideshow" : "Pause slideshow");
     const counterEl = el("div", "gallery-counter", "1 / " + photos.length);
+    controls.appendChild(pauseBtn);
+    controls.appendChild(counterEl);
     bar.appendChild(captionEl);
-    bar.appendChild(counterEl);
+    bar.appendChild(controls);
 
+    collageContainer.setAttribute("role", "region");
+    collageContainer.setAttribute("aria-roledescription", "carousel");
     collageContainer.appendChild(stage);
     collageContainer.appendChild(bar);
 
     let current = 0;
     let timer = null;
+    let userPaused = reducedMotion;
 
     function showSlide(nextIndex) {
       imgs[current].classList.remove("is-active");
@@ -92,7 +102,7 @@
     }
 
     function startTimer() {
-      if (reducedMotion || photos.length <= 1) return;
+      if (userPaused || photos.length <= 1) return;
       stopTimer();
       timer = setInterval(function () {
         showSlide(current + 1);
@@ -105,6 +115,15 @@
         timer = null;
       }
     }
+
+    pauseBtn.addEventListener("click", function () {
+      userPaused = !userPaused;
+      pauseBtn.textContent = userPaused ? "Play" : "Pause";
+      pauseBtn.setAttribute("aria-pressed", String(userPaused));
+      pauseBtn.setAttribute("aria-label", userPaused ? "Play slideshow" : "Pause slideshow");
+      if (userPaused) stopTimer();
+      else startTimer();
+    });
 
     prevBtn.addEventListener("click", function () {
       showSlide(current - 1);
@@ -222,6 +241,7 @@
           a.href = p.doi;
           a.target = "_blank";
           a.rel = "noopener noreferrer";
+          a.setAttribute("aria-label", "View paper: " + p.title);
           links.appendChild(a);
           card.appendChild(links);
         }
